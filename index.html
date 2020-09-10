@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Required meta tags always come first -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet"  href="node_modules/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet"  href="node_modules/bootstrap-social/bootstrap-social.css">
+      <link rel="stylesheet" href="Hospital.css">
+    <title>Hospital</title>
+    <script defer src="scrip.js"></script>
+</head>
+
+<body>
+    <div id="error"></div>
+   <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+       <div class="container">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+               <span class="navbar-toggler-icon"> </span>
+             </button>
+           <a class="navbar-brand mr-auto" href="#"> <img src="img/logo.png" height="30" width="41"></a>
+           <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+            </ul>
+            <span class="navbar-text">
+                <a>
+                    <span id="login" class="fa fa-sign-in"></span>Login</a>
+            </span>
+           </div>
+       </div>
+   </nav>
+   <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="login" class="modal-title">Login </h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6 col-lg-5">
+                    <h1>Bombay Hospital</h1>
+                    <p>A brilliant example of excellence, trust and compassion, Bombay Hospital is one of the premiere institutes in the health care industry of Indore. Dedicated at providing unparalleled health care services, the hospital houses supreme talents who are supported with cutting edge technology that assures effective and quickest recovery of their patients.</p>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3 align-self-center offset-1">
+                    <img src="img/logo.png" border ="0" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3 align-self-center ">
+                    <a id="reserveButton" class="btn btn-warning nav-link btn-lg btn-block " 
+                     >Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="img/uthappizza.png" alt="Uthappizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Gynecologist</h2>
+                                <p class="d-none d-sm-block">Dr. Lisa ray MBBS, DGO, is a senior consultant Obstetrician and Gynaecologist practicing for the last 29 years. She has obtained her medical graduation and post graduation from MGM Medical College.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="img/buffet.png" alt="Buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Surgeon<span class="badge badge-danger ml-2">Expert</span></h2>
+                        <p class="d-none d-sm-block">Harry Reich, MD, FACOG, FRCOG, FACS is known worldwide as a pioneer in the field of laparoscopic surgery having performed many firsts, including the first laparoscopic hysterectomy, the first pelvic lymphadenectomy for cancer, and the first excision of cul-de-sac endometriosis that included rectal resection. </p>
+                            </div>
+                        
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 >Alberto Somayya</h2>
+                        <h4>Orthopedist</h4>
+                        <p class="d-none d-sm-block">Dr. Alberto is an acknowledged orthopaedic surgeon with over 32 years of experience in knee surgery along with vast experience of trauma surgery as well.
+                            </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                       <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <span id="carousel-button-icon" class="fa fa-pause"></span>
+                        </button> 
+                </div>
+             </div>
+        </div>
+ 
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Gynecologist</h2>
+                        <p class="d-none d-sm-block">Dr. Lisa ray MBBS, DGO, is a senior consultant Obstetrician and Gynaecologist practicing for the last 29 years. She has obtained her medical graduation and post graduation from MGM Medical College.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3></h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                      <div class="media-body">
+                        <h2 class="mt-0">Our Experts<span class="badge badge-danger ml-2">Expert</span></h2>
+                        <p class="d-none d-sm-block">Harry Reich, MD, FACOG, FRCOG, FACS is known worldwide as a pioneer in the field of laparoscopic surgery having performed many firsts, including the first laparoscopic hysterectomy, the first pelvic lymphadenectomy for cancer, and the first excision of cul-de-sac endometriosis that included rectal resection.  </p>
+                      </div>
+                      <img class="d-flex mr-3 img-thumbnail align-self-center ml-2"
+                      src="img/buffet.png" alt="Buffet">
+                    </div>  
+                </div>
+                </div>          
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our  Specialists</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Director</h4>
+                        <p class="d-none d-sm-block">Dr. Alberto is an acknowledged orthopaedic surgeon with over 32 years of experience in knee surgery along with vast experience of trauma surgery as well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class ="row row-content justify-content-center ">
+            <div class = "col-12 col-sm-12 col-md-5">
+                <div id="reserveform" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Make A Appointment </h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                       <form id="form" action="#" onsubmit="return validation()">
+                           <div>
+                            <label >Patient Name:</label>
+                            <input id="Patient name" class="form-control" name ="Patient Name" type="text">
+                             <span id="username" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div>
+                            <label>Mobile No:</label>
+                            <input id="Mobile no" class="form-control" name ="Mobile" type="text">
+                            <span id="mobile" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div>
+                            <label>Email address:</label>
+                            <input id="Email address" class="form-control" name ="Email" type="text">
+                            <span id="email" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div>
+                            <label>Symptoms:</label>
+                            <input id="symptoms" class="form-control" name ="Symptoms" type="text">
+                            <span id="symptoms" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <input type="submit" name="submit" value="submit">
+                       </form>
+                       </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="c0l-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, A.B. Road<br>
+		              Vijaynagar<br>
+		              Indore<br>
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		           </address>
+                </div >
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon " href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                </div>
+           </div>
+        </div>
+    </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#mycarousel").carousel( { interval: 2000 } );
+        $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                    $("#mycarousel").carousel('pause');
+                    $("#carouselButton").children("span").removeClass('fa-pause');
+                    $("#carouselButton").children("span").addClass('fa-play');
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#mycarousel").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            });
+    });
+</script>
+<script>
+    $("#login").click(function(){  $("#loginModal").modal()}) 
+</script>
+<script>
+    $("#reserveButton").click(function(){  $("#reserveform").modal()}) 
+</script>
+</body>
+</html>
